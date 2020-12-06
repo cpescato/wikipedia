@@ -2,4 +2,4 @@
 Faites vous plaise à écrire dans ce fichier
 html syntax, markdown syntax 
 
-{% include hello.html %}
+{% include average_over_time.html %}
