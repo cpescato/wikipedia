@@ -1,6 +1,4 @@
 ### YO BANANABOY
-Faites vous plaise à écrire dans ce fichier
-html syntax, markdown syntax 
 
 # WIKIPEDIA 
 What can we learn from Wikipedia adminship elections ? 
@@ -12,9 +10,9 @@ We yet do not have the magic trick that will ensure you to be elected next time 
 We chose to look back on Wikipedia Adminship elections that happened between 2004 and 2008. 
 For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom can be distinguished Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially giving the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have go through a public election process at the end of which the vote count determines whether or not they are promoted.
 
-And now we ask : Tell us what you got Wikipedia ! 
+**And now we ask : Tell us what you got Wikipedia !**
 
-# TEMPORAL ANALYSIS 
+### TEMPORAL ANALYSIS 
 ## DATE
 If you could choose the time of year your election will be held, would a move be more strategic than the other ? We definitly know people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time ? 
 
@@ -63,10 +61,12 @@ Conclusion: Give people time to know you, to hear your opinions, and discuss abo
 need to find a story angle for this one 
 
 
-# ELECTION DUPLICATES 
+## ELECTION DUPLICATES 
+
+need to find a story angle for this one 
 
 
-# ANALYSIS OF NEUTRAL VOTES 
+## ANALYSIS OF NEUTRAL VOTES 
 Let's say your election is closed, and votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and take another chance later. 
 What do neutral votes say about your election ? What do neutral votes say about the electors's opinions ? 
 First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, this next part won't serve you.. 
@@ -86,10 +86,7 @@ include scatterplot_neutral_votes2 %}
 We can see that most of unsuccessful elections counted a higher fraction of neutral votes compared to the successful. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
 
 
-# CONCLUSION
-
-
-# ELECTION DUPLICATES 
+### CONCLUSION
 
 
 {% include average_over_time.html %}
