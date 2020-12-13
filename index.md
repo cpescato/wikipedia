@@ -15,9 +15,25 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 And now we ask : Tell us what you got Wikipedia ! 
 
 # TEMPORAL ANALYSIS 
-If you could choose the time of year your election will be held, would a move be more strategic from the other ? We definitly know people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time ? 
-
 ## DATE
+If you could choose the time of year your election will be held, would a move be more strategic than the other ? We definitly know people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time ? 
+
+Let's take a look. Its is important for further analysis to firstly know how the number of elections evolved over time, when grouped by year.
+
+{% include time_plot1.html %}
+
+We can notice an important increase (actually, even an exponential-like increase) in the number of elections between 2004, 2005, 2006 and 2007.  
+In the perspective of refining our analysis, let's see what this evolution would look like if we group the number of elections by day. 
+
+{% include time_plot2.html %}  
+
+The first thing that pops out is the peak on May 3, 2007, during which more than 300 elections were opened. One could of course suppose that the death of Warja Honegger-Lavater, the famous Swiss Illustrator, might have caused several patriots to realise that Swiss artists are poorly recognized on Wikipedia, which might have inspired them to seek adminship in order to try and make up for this.  (Yes, this is quite unlikely... but he was REALLY talented).  
+
+Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
+
+{% include time_plot2.html %}  
+
+
 
 ## DURATION 
 
