@@ -52,6 +52,7 @@ include histogram_durations1 %}
 Most of the elections lasted less than 250 hours, meaning less than 2 weeks. 
 
 include scatterplot_duration2 %}
+
 There is definitely 2 clusters. ELections that lasted close to 250 hours are more likely to have an positive outcome. On top of that, elections that lasted very little time, meaning less than 50hours, are way more likely to end with a negative outcome. 
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This also can be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections.
 
@@ -59,7 +60,34 @@ Conclusion: Give people time to know you, to hear your opinions, and discuss abo
 
 ## TIME 
 
+need to find a story angle for this one 
+
+
+# ELECTION DUPLICATES 
+
+
 # ANALYSIS OF NEUTRAL VOTES 
+Let's say your election is closed, and votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and take another chance later. 
+What do neutral votes say about your election ? What do neutral votes say about the electors's opinions ? 
+First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, this next part won't serve you.. 
+But anyway, we dove into the elections where at leasat one neutral vote was casted per election. We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
+
+ include scatterplot_plot_neutral_votes1 %}
+
+We can see that a high fraction of neutral votes are correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information. 
+One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. 
+Another explanation is that people were really not convinced that you would be a good Wikkipedia administrator, but they actually knew you as a person, and as the elections are public, they did not want to hurt any feelings. Hence they chose to cast a neutral vote rather than a negative vote. 
+Let's be honest, in both cases, your feelings mught have been spared, but one could say you missed your shot.
+
+Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are catsed, one could suppose that more people are perplew about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
+
+include scatterplot_neutral_votes2 %}
+
+We can see that most of unsuccessful elections counted a higher fraction of neutral votes compared to the successful. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
+
+
+# CONCLUSION
+
 
 # ELECTION DUPLICATES 
 
