@@ -18,18 +18,18 @@ If you could choose the time of year your election will be held, would a move be
 
 Let's take a look. Its is important for further analysis to firstly know how the number of elections evolved over time, when grouped by year.
 
-include time_plot1.html %}
+*include time_plot1.html %}*
 
 We can notice an important increase (actually, even an exponential-like increase) in the number of elections between 2004, 2005, 2006 and 2007.  
 In the perspective of refining our analysis, let's see what this evolution would look like if we group the number of elections by day. 
 
-include time_plot2.html %}  
+*include time_plot2.html %}*
 
 The first thing that pops out is the peak on May 3, 2007, during which more than 300 elections were opened. One could of course suppose that the death of Warja Honegger-Lavater, the famous Swiss Illustrator, might have caused several patriots to realise that Swiss artists are poorly recognized on Wikipedia, which might have inspired them to seek adminship in order to try and make up for this.  (Yes, this is quite unlikely... but he was REALLY talented).  
 
 Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
-include time_plot2.html %}  
+*include time_plot2.html %}*  
 
 So we have seen that the number of elections and votes have increased between 2004 and 2008. but what about the election outcomes? 
 
@@ -38,18 +38,18 @@ Add plots
 
 XXX
 
-include data_with_size.html %}
+*include data_with_size.html %}*
 
 ## DURATION 
 O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens whithin the duration of the election, we can identify the duration of the election with the length of time during which you should campaign. 
 
 We analyse a large variety of durations, so we have a good grasp on the infuence of this parameter. 
 
-include histogram_durations1 %}
+*include histogram_durations1 %}*
 
 Most of the elections lasted less than 250 hours, meaning less than 2 weeks. 
 
-include scatterplot_duration2 %}
+*include scatterplot_duration2 %}*
 
 There is definitely 2 clusters. ELections that lasted close to 250 hours are more likely to have an positive outcome. On top of that, elections that lasted very little time, meaning less than 50hours, are way more likely to end with a negative outcome. 
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This also can be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections.
@@ -58,12 +58,12 @@ Conclusion: Give people time to know you, to hear your opinions, and discuss abo
 
 ## TIME 
 
-need to find a story angle for this one 
+*need to find a story angle for this one* 
 
 
 ## ELECTION DUPLICATES 
 
-need to find a story angle for this one 
+*need to find a story angle for this one* 
 
 
 ## ANALYSIS OF NEUTRAL VOTES 
@@ -72,7 +72,7 @@ What do neutral votes say about your election ? What do neutral votes say about 
 First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, this next part won't serve you.. 
 But anyway, we dove into the elections where at leasat one neutral vote was casted per election. We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
- include scatterplot_plot_neutral_votes1 %}
+*include scatterplot_plot_neutral_votes1 %}*
 
 We can see that a high fraction of neutral votes are correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. 
@@ -81,7 +81,7 @@ Let's be honest, in both cases, your feelings mught have been spared, but one co
 
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are catsed, one could suppose that more people are perplew about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
 
-include scatterplot_neutral_votes2 %}
+*include scatterplot_neutral_votes2 %}*
 
 We can see that most of unsuccessful elections counted a higher fraction of neutral votes compared to the successful. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
 
