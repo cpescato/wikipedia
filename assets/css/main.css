@@ -3316,9 +3316,10 @@
 
 	#cta {
 		background: #0094ff;
-		color: #f9e6df;
+		color: #0094ff;
 		padding: 3.5em 0 4em 0;
 		text-align: center;
+		vertical-align: baseline; 
 	}
 
 		#cta h2, #cta h3, #cta h4, #cta h5, #cta h6 {
