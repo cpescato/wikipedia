@@ -12,7 +12,7 @@
 /* Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain) */
 
 	html, body, div, span, applet, object,
-	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+	iframe,  p, blockquote,
 	pre, a, abbr, acronym, address, big, cite,
 	code, del, dfn, em, img, ins, kbd, q, s, samp,
 	small, strike, strong, sub, sup, tt, var, b,
@@ -28,6 +28,15 @@
 		font-size: 100%;
 		font: inherit;
 		text-align:left; 
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0;
+		padding: 0; 
+		border: 0; 
+		font-size: 100%; 
+		font: inherit; 
+		vertical-align: central; 
 	}
 
 	article, aside, details, figcaption, figure,
