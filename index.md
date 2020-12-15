@@ -80,7 +80,15 @@ Sure, we would love to see you elected, but this is where we ask : WIkipedia, do
 
 - Also, elections with a very strongly positive vote do exist, but no failed elections has an averga vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
 
+But don't get too confident just yet. In fact, we have computed that while 73.6% of the votes are positive, only 44.6% of elections are successful. Yes, you read that right. This could be explained by the fact that bureaucrats can close an election at any time, or by the fact that few successful elections regroup a large amount of the positive votes. This is possible since duration does not tell us the rythm at which the votes are casted.
 
+But let's investigate that. We kept track of both the number of votes per elections and their ending average vote value. so let's see : 
+XXX
+
+
+**Can we observe the Information cascade phenomenon ?** 
+Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the others do. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
+One might expect to see this kind of behaviour for Wikipedia public elections, and in any setting in which voters tell future voters the nature of the vote they casted.  
 
 ## ELECTION DUPLICATES 
 
