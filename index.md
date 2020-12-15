@@ -8,14 +8,14 @@ Politics are everywhere.
 From seeking to be the class representative of your 5th grade class, to announcing you will be running for president (never say never, sometimes dreams DO come true), you are most likely to be involved in some kind of election throughout your life. 
 We do not yet have the magic trick that will ensure you to be elected next time you run, but we are working hard on it. And for that, we chose to analyse past elections, exactly like football players review past games to improve their strategy. 
 To this end, we chose to look back on Wikipedia Adminship elections that happened between 2004 and 2008. 
-For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process at the end of which the vote count XXnot only vote count determines outcomeXX determines whether or not they are promoted.
+For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process which determines whether or not they are promoted.
 
 **And now we ask : Tell us what you got Wikipedia !**
 
 ### TEMPORAL ANALYSIS 
 ## DATE
-If you could choose the time of year your election will be held, would a certain move be more strategic than another ? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? XXOr do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch? XX
-Let's take a look. Its is important for further analysis to firstly take a look at how the number of elections evolved over time, when grouped by year.
+If you could choose the time of year your election will be held, would a certain move be more strategic than another ? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? Or do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch? 
+Let's take a look. Its is important for further analysis to firstly observe at how the number of elections evolved over time, when grouped by year.
 
 *include time_plot1.html %}*
 
@@ -23,7 +23,8 @@ We can notice an important increase (actually, even an exponential-like increase
 
 *include time_plot2.html %}*
 
-The first thing that pops out is the peak on May 3, 2007, during which more than 300 elections were XXopened-->closed?XX. One could of course suppose that the death of Warja Honegger-Lavater, the famous Swiss Illustrator, might have caused several patriots to realise that Swiss artists are poorly recognized on Wikipedia, which might have inspired them to seek adminship in order to try and make up for this.  (Yes, this is quite unlikely... but she was REALLY talented).  
+The first thing that pops out is the peak on May 3, 2007, during which more than 300 elections were closed. XXOne could of course suppose that the death of Warja Honegger-Lavater, the famous Swiss Illustrator, might have caused several patriots to realise that Swiss artists are poorly recognized on Wikipedia, which might have inspired them to seek adminship in order to try and make up for this.  (Yes, this is quite unlikely... but she was REALLY talented).  XX
+*find another explanation*
 Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
 *include time_plot2.html %}*  
@@ -38,23 +39,47 @@ XXX
 *include data_with_size.html %}*
 
 ## DURATION 
-O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can identify the duration of the election with the optimal length of time during which you should campaign.XXand hope that after this time your election gets closedXX
+O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can identify the duration of the election with the optimal length of time during which you should campaign and hope that after this time your election gets closed.
 We analyse a large variety of durations to get a good grasp on the infuence of this parameter. 
 
 *include histogram_durations1 %}*
 
-Most of the elections lasted less than 250 hours, meaning less than 2 weeks. 
+Let's also check if the different distributions of elction durations are different between succeeded and failed elections 
 
-*include scatterplot_duration2 %}*
+*include histograms_durations2 %}
+
+More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preversiving its meaning and relevance, we will plot the fraction of positive vites fir each election with respect to its durations, while only considering elections lasting less than 250 hours.  
+
+*include scatterplot_duration3 %}*
 
 We can clearly see 2 clusters. ELections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections. XXis that a fact or do we assume it?XX 
+
+Rewrite, same as notebook
+*However, we know that the decision of the outcome of an elections does not only stand on the fraction of positive votes over the total number of votes. There has been some cases where bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. Thus, to go a bit further and try to visualize that, we are going to group the elections by durations (in hours, up to second precision) and plot the fraction of election with a positive outcome for each duration.*
+
+*include sactterplot_duration 4%}*
+
+*What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Secondly, we can see that among the elections lasting less than 100hours, very few of them had a positive outcome.*
 
 **Conclusion: Give people time to know you, to hear your opinions, and discuss about your program!**
 
 ## TIME 
 
 *need to find a story angle for this one* 
+Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly on the public elections like Wikipedia, but is worth mentioning for all elections : when an important elections is coming up, people talk about, and can influence each other, whether it is within a family, a friend group or even through the media !
+In this next part, we have analyse the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
+
+Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0. 
+
+*include plot_time1 %}
+
+As we can see, a few elections have lasted a very long time compared to the rest, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
+- Only few elections where strongly positive or negative, and those that were lasted very short. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a larger social network ! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
+Sure, we would love to see you elected, but this is where we ask : WIkipedia, do you have any mechanisms in place to prevent such a thing ? 
+
+- Also, elections with a very strongly positive vote do exist, but no failed elections has an averga vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
+
 
 
 ## ELECTION DUPLICATES 
@@ -70,13 +95,13 @@ But anyway, we dove into the elections where at least one neutral vote was caste
 
 *include scatterplot_plot_neutral_votes1 %}*
 
-We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information XXon how these votes are casted and interpretedXX. 
-One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. XXThis seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote?XX
+We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
+One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
 Another explanation is that people were really not convinced that you would be a good Wikipedia administrator, but they actually knew you as a person, and as the elections are public, they did not want to hurt any feelings. Hence they chose to cast a neutral vote rather than a negative vote. 
-Let's be honest, in both cases, your feelings might have been spared, but one could say you missed your shot.
-XXoption that they firstly voted positive or negative and then decided to change their vote lateron (if that's allowed for Wikipedia elections), as Francis Picabia stated, "Notre tête est ronde pour permettre à la pensée de changer de direction", i.e. our heads are round so that our thinking can change directionXX
+Finally, it could be explained if people voted firstly positive or negative, and then decided to change their vote later on. As the very famous Francis Picabia stated, "our heads is round so that it allows our thinking to change direction." How inspiring.. However, it is not mentioned whether or not voters are able to change an already casted vote. 
+Let's be honest, in all three cases, your feelings might have been spared, but one could say you missed your shot.
 
-Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplew XX?XX about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
+Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
 
 *include scatterplot_neutral_votes2 %}*
 
