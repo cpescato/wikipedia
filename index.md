@@ -65,9 +65,8 @@ Rewrite, same as notebook
 **Conclusion: Give people time to know you, to hear your opinions, and discuss about your program!**
 
 ## TIME 
-
-*need to find a story angle for this one* 
-Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly on the public elections like Wikipedia, but is worth mentioning for all elections : when an important elections is coming up, people talk about, and can influence each other, whether it is within a family, a friend group or even through the media !
+ 
+Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly to the public elections like Wikipedia, but is worth mentioning for all elections : when an important election is coming up, people talk about, and can influence each other, whether it is within a family, a friend group or even through the media !
 In this next part, we have analyse the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
 
 Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0. 
@@ -90,9 +89,6 @@ XXX
 Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the others do. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
 One might expect to see this kind of behaviour for Wikipedia public elections, and in any setting in which voters tell future voters the nature of the vote they casted.  
 
-## ELECTION DUPLICATES 
-
-*need to find a story angle for this one* 
 
 
 ## ANALYSIS OF NEUTRAL VOTES 
