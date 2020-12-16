@@ -15,23 +15,33 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 
 ### TEMPORAL ANALYSIS 
 ## DATE
-If you could choose the time of year your election will be held, would a certain move be more strategic than another ? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? Or do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch? 
+If you could choose the time of year your election will be held, would a certain move be more strategic than another ? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? Or do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch?  
 Let's take a look. Its is important for further analysis to firstly observe at how the number of elections evolved over time, when grouped by year.
 
-{% include nbr_elec.html %}*
+*How did the number of election varied over time ?*
+To play around with the time length, click on the tiny lines in the legend !!
 
-We can notice an important increase (actually, even an exponential-like increase) in the number of elections between 2004, 2005, 2006 and 2007.  In the perspective of refining our analysis, let's see what this evolution looks like if we group the number of elections by day. 
+{% include elec_timenbr_elecFalse.html %}*
 
-*include time_plot2.html %}*
 
-The first thing that pops out is the peak on May 3, 2007, during which more than 300 elections were closed. XXOne could of course suppose that the death of Warja Honegger-Lavater, the famous Swiss Illustrator, might have caused several patriots to realise that Swiss artists are poorly recognized on Wikipedia, which might have inspired them to seek adminship in order to try and make up for this.  (Yes, this is quite unlikely... but she was REALLY talented).  XX
-*find another explanation*
+Very interestingly, we can notice an **exponential-like increase** in the number of election between 2004 (70 elections), 2005 (150 elections), 2006 (360 elections), and 2007 (2100 elections).
+The numbers of elections are approximated here for better understanding.
+Let's plot this with a log-scaled y axis to investigate the exponential-like increase.
+From the graph below, we can see a straight line for the years 2004, 2005, and 2006. However the massive increase in the number of elections in 2007 was so large that it grew even faster than an exponential function.
+
+{% include elec_timenbr_elecTrue.html %}*
+
+O.K., let's go back on the first plot. Click on the tiny blue line to display the analysis by day. 
+The first thing that pops out is the peaks on May 3, 2007, during which more than 300 elections were closed, on May 26 with more than 200 elections being closed, and third pic on Dec 4 with above 100 elections closed. This raises questions. What happened on these days ? Well, we found out that the famous Swiss illustrator Warja Lavator died on May 3rd, 2007. She was so talented, the bureaucrats could have closed the elections so everyone could mourn in peace ? Hmm.. Seems unlikely. 
+Rather, it could well be that Wikipedia bureaucrates decided to close a number of elections on a given day, like a 'house-keeping' day. In other words, Wikipedia bureaucrates would meet a few times a year to end elections for which the current votes are enough to properly decide whether a candidate should be given the adminship status or not.
+
 Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
+{% include vote_timenbr_voteFalse.html %}
 
-{% include nbr_vote.html %}
+Plot twist : the three pics previously mentionned do not appear. This means that these two days were not particularly intense in terms of votes but many elections were closed by bureaucrates. It supports the hypothesis that Wikipedia bureaucrates 'cleaned up' the elections on these two days.
 
-So we have seen that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
+Up to now, we have seen that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
 
 Add plots 
 
