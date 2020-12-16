@@ -1,8 +1,10 @@
-### YO BANANABOY
+### YO BANANA BOY
 
 # WIKIPEDIA 
 What can we learn from Wikipedia adminship elections ? 
 How social network structure potentially influences voting in a time-dependent manner: analysis of a signed social network. 
+
+<img src="images/duration2.png" width="317" height="218">
 
 Politics are everywhere. 
 From seeking to be the class representative of your 5th grade class, to announcing you will be running for president (never say never, sometimes dreams DO come true), you are most likely to be involved in some kind of election throughout your life. 
@@ -28,19 +30,13 @@ The first thing that pops out is the peak on May 3, 2007, during which more than
 Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
 
-{% include nbr_vote.html %}*
+{% include nbr_vote.html %}
 
 So we have seen that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
 
 Add plots 
 
 XXX
-
-
-{% include nbr_vote.html %}*
-    # save the plot
-    html_path = "../wikipedia/_includes/data_with_size" + y_name + ".html"
-    fig.write_html(html_path)
 
 
 *include data_with_size.html %}*
@@ -90,11 +86,26 @@ Seems too good to be true right ? So it made us ask ourselves : Wikipedia, do yo
 
 But don't get too confident just yet. In fact, we have computed that while 73.6% of the votes are positive, only 44.6% of elections are successful. Yes, you read that right. This could be explained by the fact that bureaucrats can close an election at any time, or by the fact that few successful elections regroup a large amount of the positive votes. This is possible since duration does not tell us the rythm at which the votes are casted.
 
-But let's investigate that. We kept track of both the number of votes per elections and their ending average vote value. so let's see : 
-XXX
 
+But let's investigate that. We kept track of both the number of votes per elections and their ending average vote value. so let's see :
+*is this next part to keep in the data story ?*
+XX ------------------------
+For successful elections..
+- The minimal average vote of an election was -0.00038, for a total of 47 votes casted for said election, while the maximal average vote was 0.77778 for a total of 27 votes casted for this election. 
+- The mean average vote of an election was 0.00437, while the median average vote was 0.00128. 
+
+For failed elections ...
+- The minimal average vote of an election was -0.09477 for a total of 29 votes casted fir said election, while the maximal average vote was 006358 for a total of 81 vote scasted for the corresponding election. 
+- The mean average vote of an election was -0.00005, while the median average vote was -0.00005. 
+
+We observe that for failed election, both mean and median appear to be  equal at this precision level, and that the median vote for failed elections is very close to 0. However, for successful elections, the election with the maximal mean vote only counted 27 votes casted. 
+XX-----------------------------
+
+Let's take a closer look at the elections which duration did not exceed the third quartile of the distribution of the durations. 
 
 {% include time3.html %}
+
+Weirdly, a few failed elections have an overall positive mean vote. However, we could not find any successful election with a overall negative mean vote. To justify that, we would have to go further in the analysis of the comments written live during the lection process. 
 
 **Can we observe the Information cascade phenomenon ?** 
 Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
