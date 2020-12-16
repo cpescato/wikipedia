@@ -45,10 +45,17 @@ Up to now, we have seen that the number of elections and votes have increased be
 
 Add plots 
 
-XXX
+**XXX**
 
+Now that you have a *perfect* understanding of the 'basic concepts' that we just investigated, if you want to dig deeper and keep looking into this time analysis, here is our Christmas present to you : A beautiful, colorful, complete visualization. You're welcome ;)
 
-*include data_with_size.html %}*
+**Have fun and play with the plot! It conforts the interpretations we made previously :)**
+Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in!
+
+{%include vote_timeavg_vote.html %}*
+
+{%include elec_timeavg_elec.html %}*
+
 
 ## DURATION 
 O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can identify the duration of the election with the optimal length of time during which you should campaign and hope that after this time your election gets closed.
