@@ -8,7 +8,7 @@ Politics are everywhere.
 From seeking to be the class representative of your 5th grade class, to announcing you will be running for president (never say never, sometimes dreams DO come true), you are most likely to be involved in some kind of election throughout your life. 
 We do not yet have the magic trick that will ensure you to be elected next time you run, but we are working hard on it. And for that, we chose to analyse past elections, exactly like football players review past games to improve their strategy. 
 To this end, we chose to look back on Wikipedia Adminship elections that happened between 2004 and 2008. 
-For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process which determines whether or not they are promoted.
+For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process which determines whether or not they are promoted. If you are more curious, a list of all admins can be found (here)[https://en.wikipedia.org/wiki/Special:ListUsers?username=&group=sysop&wpsubmit=&wpFormIdentifier=mw-listusers-form&limit=50]
 
 **And now we ask : Tell us what you got Wikipedia !**
 
@@ -17,7 +17,7 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 If you could choose the time of year your election will be held, would a certain move be more strategic than another ? We definitely know that people are cheerier when, for example, Santa's coming to town, but is it to the point where it could influence a vote they would cast at this time of year? Or do people that cast their votes around this period of the year that you usually spend with your loved ones, far away from your screen, tend to somewhat adopt the mind set of the Grinch? 
 Let's take a look. Its is important for further analysis to firstly observe at how the number of elections evolved over time, when grouped by year.
 
-*include time_plot1.html %}*
+{% include nbr_elec.html %}*
 
 We can notice an important increase (actually, even an exponential-like increase) in the number of elections between 2004, 2005, 2006 and 2007.  In the perspective of refining our analysis, let's see what this evolution looks like if we group the number of elections by day. 
 
@@ -27,14 +27,21 @@ The first thing that pops out is the peak on May 3, 2007, during which more than
 *find another explanation*
 Anyway, what about the number of votes ? We could easily suppose that they tend to follow a similar trend than the number of elections, but let's actually verify it. 
 
-*include time_plot2.html %}*  
+
+{% include nbr_vote.html %}*
 
 So we have seen that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
 
 Add plots 
 
-
 XXX
+
+
+{% include nbr_vote.html %}*
+    # save the plot
+    html_path = "../wikipedia/_includes/data_with_size" + y_name + ".html"
+    fig.write_html(html_path)
+
 
 *include data_with_size.html %}*
 
@@ -69,13 +76,15 @@ Rewrite, same as notebook
 Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly to the public elections like Wikipedia, but is worth mentioning for all elections : when an important election is coming up, people talk about it and can influence each other, whether it is within a family, a friend group or even through the media !
 In this next part, we have analysed the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
 
-Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0. XXwould add: In case you are not sure what this average vote tells you, an average vote over 0 means that, so far, overall more positive than negative votes have been casted and the exact opposite is true for an average vote under 0.XX
+Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0.  In case you are not sure what this average vote tells you, an average vote over 0 means that, so far, overall more positive than negative votes have been casted and the exact opposite is true for an average vote under 0.
 
-*include plot_time1 %}
+{% include time1.html %}
 
-As we can see, a few elections have lasted a very long time compared to the rest, XXwould add: as already discovered beforehandXX, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
+{% include time2.html %}
+
+As we can see, a few elections have lasted a very long time compared to the rest, as already discovered beforehand, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
 - Only few elections were strongly positive or negative, and those that were lasted only a very short amount of time. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a larger social network ! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
-Sure, we would love to see you elected, but this XXwould change to:seems too good to be true which made us ask ourselvesXX is where we ask : Wikipedia, do you have any mechanisms in place to prevent such a thing ? 
+Seems too good to be true right ? So it made us ask ourselves : Wikipedia, do you have any mechanisms in place to prevent such a thing ? 
 
 - Also, elections with a very strongly positive vote do exist, but no failed elections has an averga vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
 
@@ -84,6 +93,8 @@ But don't get too confident just yet. In fact, we have computed that while 73.6%
 But let's investigate that. We kept track of both the number of votes per elections and their ending average vote value. so let's see : 
 XXX
 
+
+{% include time3.html %}
 
 **Can we observe the Information cascade phenomenon ?** 
 Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
