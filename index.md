@@ -45,17 +45,17 @@ O.K., so now you have chosen the perfect date for your election to be held. But 
 We analyse a large variety of durations to get a good grasp on the infuence of this parameter. 
 
 *include histogram_durations1 %}*
-<img src="images/duration1.png" width="317" height="218">
+<img src="images/duration1.png" width="400" height="300">
 
 Let's also check if the different distributions of election durations are different between succeeded and failed elections 
 
 *include histograms_durations2 %}
-<img src="images/duration2.png">
+<img src="images/duration2.png"width="400" height="300">
 
 
 More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preserving its meaning and relevance, we will plot the fraction of positive votes for each election with respect to its durations, while only considering elections lasting less than 250 hours.  
 
-<img src="images/duration3.png">
+<img src="images/duration3.png"width="400" height="300">
 
 We can clearly see 2 clusters. ELections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections. XXis that a fact or do we assume it?XX 
@@ -63,7 +63,7 @@ This repartition seems coherent with the fact that shorter elections are rather 
 Rewrite, same as notebook
 *However, we know that the decision of the outcome of an elections does not only stand on the fraction of positive votes over the total number of votes. There has been some cases where bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. Thus, to go a bit further and try to visualize that, we are going to group the elections by durations (in hours, up to second precision) and plot the fraction of election with a positive outcome for each duration.*
 
-<img src="images/duration4.png">
+<img src="images/duration4.png"width="400" height="300">
 
 *What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Secondly, we can see that among the elections lasting less than 100hours, very few of them had a positive outcome.*
 
@@ -121,11 +121,10 @@ What do neutral votes say about your election ? What do neutral votes say about 
 First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, no one casted a neutral vote and you have been rejected anyway, and this next part won't serve you.. 
 But anyway, we dove into the elections where at least one neutral vote was casted per election. We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-<img src="images/neutralvotes1.png">
+<img src="images/neutralvotes1.png"width="400" height="300">
 
 
-<img src="images/neutralvotes2.png">
-
+<img src="images/neutralvotes2.png"width="400" height="300">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
@@ -135,7 +134,7 @@ Let's be honest, in all three cases, your feelings might have been spared, but o
 
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
 
-<img src="images/neutralvotes3.png">
+<img src="images/neutralvotes3.png"width="400" height="300">
 
 We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
 
