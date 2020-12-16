@@ -74,15 +74,14 @@ More than 75% of the elections lasted less than 180 hours, meaning less than 2 w
 
 
 We can clearly see 2 clusters. ELections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
-This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections. XXis that a fact or do we assume it?XX 
+This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections. 
 
-Rewrite, same as notebook
-*However, we know that the decision of the outcome of an elections does not only stand on the fraction of positive votes over the total number of votes. There has been some cases where bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. Thus, to go a bit further and try to visualize that, we are going to group the elections by durations (in hours, up to second precision) and plot the fraction of election with a positive outcome for each duration.*
+Keep in mind, the fraction of positive votes over the total number of votes is not always indicative of the election outcome. Bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. You might be thinking : *Wikipedia ? What about democracy ? The voice of the people ?*  
+Just to make sure you trust us on that, we are going to visualize that by grouping the elections by durations (in hours, up to second precision) and plotting the fraction of election with a positive outcome for each duration.
 
 <img src="images/duration4.png" width="400" height="300">
-*Distribution of the ratio of successful elections with respect to their duration (in hours)
 
-*What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Secondly, we can see that among the elections lasting less than 100hours, very few of them had a positive outcome.*
+What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100hours, very few of them had a positive outcome.
 
 **Conclusion: Give people time to know you, to hear your opinions, and discuss about your program!**
 
