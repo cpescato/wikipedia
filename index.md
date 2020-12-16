@@ -44,11 +44,11 @@ We analyse a large variety of durations to get a good grasp on the infuence of t
 
 *include histogram_durations1 %}*
 
-Let's also check if the different distributions of elction durations are different between succeeded and failed elections 
+Let's also check if the different distributions of election durations are different between succeeded and failed elections 
 
 *include histograms_durations2 %}
 
-More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preversiving its meaning and relevance, we will plot the fraction of positive vites fir each election with respect to its durations, while only considering elections lasting less than 250 hours.  
+More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preserving its meaning and relevance, we will plot the fraction of positive votes for each election with respect to its durations, while only considering elections lasting less than 250 hours.  
 
 *include scatterplot_duration3 %}*
 
@@ -66,16 +66,16 @@ Rewrite, same as notebook
 
 ## TIME 
  
-Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly to the public elections like Wikipedia, but is worth mentioning for all elections : when an important election is coming up, people talk about, and can influence each other, whether it is within a family, a friend group or even through the media !
-In this next part, we have analyse the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
+Let's now imagine you are in the middle of your election. Votes are being casted, votes are being counted, and you are biting your nails, in the middle of all this. So many questions are flying thick and fast through your head. *Should I be worried that the first votes are mainly negative ? Can tendencies be reversed ? Can people be influenced by other people's votes ?* At first sight, this last one obvioulsy applies mainly to the public elections like Wikipedia, but is worth mentioning for all elections : when an important election is coming up, people talk about it and can influence each other, whether it is within a family, a friend group or even through the media !
+In this next part, we have analysed the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
 
-Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0. 
+Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0. XXwould add: In case you are not sure what this average vote tells you, an average vote over 0 means that, so far, overall more positive than negative votes have been casted and the exact opposite is true for an average vote under 0.XX
 
 *include plot_time1 %}
 
-As we can see, a few elections have lasted a very long time compared to the rest, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
-- Only few elections where strongly positive or negative, and those that were lasted very short. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a larger social network ! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
-Sure, we would love to see you elected, but this is where we ask : WIkipedia, do you have any mechanisms in place to prevent such a thing ? 
+As we can see, a few elections have lasted a very long time compared to the rest, XXwould add: as already discovered beforehandXX, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
+- Only few elections were strongly positive or negative, and those that were lasted only a very short amount of time. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a larger social network ! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
+Sure, we would love to see you elected, but this XXwould change to:seems too good to be true which made us ask ourselvesXX is where we ask : Wikipedia, do you have any mechanisms in place to prevent such a thing ? 
 
 - Also, elections with a very strongly positive vote do exist, but no failed elections has an averga vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
 
@@ -86,13 +86,13 @@ XXX
 
 
 **Can we observe the Information cascade phenomenon ?** 
-Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the others do. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
+Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
 One might expect to see this kind of behaviour for Wikipedia public elections, and in any setting in which voters tell future voters the nature of the vote they casted.  
 
 
 
 ## ANALYSIS OF NEUTRAL VOTES 
-Let's say your election is closed, and votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and maybe take another chance later. 
+Let's say your election is closed, votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and maybe take another chance later. 
 What do neutral votes say about your election ? What do neutral votes say about the electors's opinions ? 
 First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, no one casted a neutral vote and you have been rejected anyway, and this next part won't serve you.. 
 But anyway, we dove into the elections where at least one neutral vote was casted per election. We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
