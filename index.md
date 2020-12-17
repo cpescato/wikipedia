@@ -58,16 +58,16 @@ Feel free to investigate the graphs by activating the traces for averaging over 
 O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can identify the duration of the election with the optimal length of time during which you should campaign and hope that after this time your election gets closed.
 We analyse a large variety of durations to get a good grasp on the infuence of this parameter. 
 
-<img src="images/duration1.png" width="400" height="300">
+<img src="images/duration1.png" width="600" height="300">
 
 Let's also check if the different distributions of election durations are different between succeeded and failed elections 
 
-<img src="images/duration2.png" width="600" height="300">
+<img src="images/duration2.png" width="800" height="300">
 
 More than 75% of the elections lasted less than 180 hours, meaning less than 2 weeks. In order to obtain a satisfying representation while preserving its meaning and relevance, we will plot the fraction of positive votes for each election with respect to its durations, while only considering elections lasting less than 250 hours.  
 
 
-<img src="images/duration3.png" width="400" height="300">
+<img src="images/duration3.png" width="600" height="300">
 
 
 We can clearly see 2 clusters. ELections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
@@ -76,7 +76,7 @@ This repartition seems coherent with the fact that shorter elections are rather 
 Keep in mind, the fraction of positive votes over the total number of votes is not always indicative of the election outcome. Bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. You might be thinking : *Wikipedia ? What about democracy ? The voice of the people ?*  
 Just to make sure you trust us on that, we are going to visualize that by grouping the elections by durations (in hours, up to second precision) and plotting the fraction of election with a positive outcome for each duration.
 
-<img src="images/duration4.png" width="400" height="300">
+<img src="images/duration4.png" width="600" height="300">
 
 What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100hours, very few of them had a positive outcome.
 
