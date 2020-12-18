@@ -36,26 +36,35 @@ Anyway, what about the number of votes ? We could easily suppose that they tend 
 
 {% include vote_timenbr_voteFalse.html %}
 
-Plot twist : the three pics previously mentionned do not appear. This means that these two days were not particularly intense in terms of votes but many elections were closed by bureaucrates. It supports the hypothesis that Wikipedia bureaucrates 'cleaned up' the elections on these two days.
+Plot twist : the three pics previously mentionned do not appear. This means that these two days were not particularly intense in terms of votes but many elections were closed by bureaucrates. It supports the hypothesis that Wikipedia bureaucrates 'cleaned up' the elections on these two days. 
+It is clear that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
 
-Up to now, we have seen that the number of elections and votes have increased between 2004 and 2008. But what about the election outcomes? 
+{% include elec_timeavg_elecFalse.html %}
 
-Add plots 
-
-**XXX**
+Well, it appears that the election outcome is highly variable over time. It fluctuates over months, weeks, days. And on top of that, it seems to be a non-period fashion ! Look, the plot displays very irregular patterns.  
+Overall, it suggests that closing an election at Christmas time, or at any other time for that matter, is far from being a guarantee that you will be elected... 
 
 Now that you have a *perfect* understanding of the 'basic concepts' that we just investigated, if you want to dig deeper and keep looking into this time analysis, here is our Christmas present to you : A beautiful, colorful, complete visualization. You're welcome ;)
 
 **Have fun and play with the plot! It conforts the interpretations we made previously :)**
 Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in!
 
-{%include vote_timeavg_vote.html %}*
+{%include vote_timeavg_votebubbles.html %}*
 
-{%include elec_timeavg_elec.html %}*
+{%include elec_timeavg_elecbubbles.html %}*
+
+We just could NOT resist making a few comments about these plots, so here they are : 
+*About the votes (first plot):*
+- Until around July 2005, the number of votes is quite low (smaller bubbles) compared to the number of votes from July 2005 until January 2008 (bigger bubbles). Interesting! It suggests (again) that over time more and more votes were casted for Wikipedia elections. 
+- Focusing on the week range, we are sure you did not miss out on the *little red bubble* that does not follow the overall trend in January 2007, corresponding to the number of votes recorded the week ending with December the 31st 2006. At first, it os no surprise, as one could expect that during the holiday season people tend to be away from the computer, spending time with their relatives. Sadly, looking at the overall trend, we cannot decipher a decrease in the number of votes at the end of each year.
+
+*About the elections* (second plot):
+What about the *large green bubble* ? It accounts for the near-thousand elections was were closed in the month of May 2007 -- encompassing two of our election-closure pics!
+
 
 
 ## DURATION 
-O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can identify the duration of the election with the optimal length of time during which you should campaign and hope that after this time your election gets closed.
+O.K., so now you have chosen the perfect date for your election to be held. But it is not the only parameter to take into account if you want to maximize your chances of being elected. Another important point is the duration of the election. As Wikipedia elections are public and a discussion between voters happens during the election duration, we can try and identify the duration of the election with the optimal length of time during which you should campaign and hope that after this time your election gets closed.
 We analyse a large variety of durations to get a good grasp on the infuence of this parameter. 
 
 <img src="images/duration1.png" width="600" height="300">
@@ -74,9 +83,9 @@ We can clearly see 2 clusters. ELections that lasted close to 250 hours are more
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that cumulate almost only negative votes from the beginning, resulting in short, failed elections. 
 
 Keep in mind, the fraction of positive votes over the total number of votes is not always indicative of the election outcome. Bureaucrats had the power to make an election unsuccessful even if the fraction of positive votes exceeded 0.5. You might be thinking : *Wikipedia ? What about democracy ? The voice of the people ?*  
-Just to make sure you trust us on that, we are going to visualize that by grouping the elections by durations (in hours, up to second precision) and plotting the fraction of election with a positive outcome for each duration.
+Just to evaluate the frequency of this phenomenon, we are going to visualize that by grouping the elections by durations (in hours, up to second precision) and plotting the fraction of election with a positive outcome for each duration.
 
-<img src="images/duration4.png" width="600" height="300">
+<img src="images/duration4.png" width="550" height="300">
 
 What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100hours, very few of them had a positive outcome.
 
@@ -88,8 +97,6 @@ Let's now imagine you are in the middle of your election. Votes are being casted
 In this next part, we have analysed the evolution of the votes throughout an election for you, with the hope that it would ease your mind and answer your questions. Yes, if it was not obvious yet, we hate a tormented mind. 
 
 Below is a plot representing the average vote with respect to time for all elections, both successful and failed. Remember, -1 is a vote against, +1 a positive vote, and a neutral vote takes the value of 0.  In case you are not sure what this average vote tells you, an average vote over 0 means that, so far, overall more positive than negative votes have been casted and the exact opposite is true for an average vote under 0.
-
-{% include time1.html %}
 
 {% include time2.html %}
 
@@ -120,7 +127,7 @@ Let's take a closer look at the elections which duration did not exceed the thir
 
 {% include time3.html %}
 
-Weirdly, a few failed elections have an overall positive mean vote. However, we could not find any successful election with a overall negative mean vote. To justify that, we would have to go further in the analysis of the comments written live during the lection process. 
+Weirdly, a few failed elections have an overall positive mean vote. However, we could not find any successful election with a overall negative mean vote. To justify that, we would have to go further in the analysis of the comments written live during the election process. 
 
 <img src="images/time3.png" width="400" height="300">
 
@@ -135,13 +142,12 @@ One might expect to see this kind of behaviour for Wikipedia public elections, a
 ## ANALYSIS OF NEUTRAL VOTES 
 Let's say your election is closed, votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and maybe take another chance later. 
 What do neutral votes say about your election ? What do neutral votes say about the electors's opinions ? 
-First, we have found that if there were no neutral votes casted for one election, there is a 53% chance of being elected. Meaning that maybe, no one casted a neutral vote and you have been rejected anyway, and this next part won't serve you.. 
-But anyway, we dove into the elections where at least one neutral vote was casted per election. We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
+We dove into the elections where at least one neutral vote was casted per election. 
 
-<img src="images/neutralvotes1.png" width="400" height="300">
+**Neutral votes and the election outcome**
+We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-
-<img src="images/neutralvotes2.png" width="400" height="300">
+<img src="images/neutralvotes2.png" width="600" height="300">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
@@ -149,17 +155,13 @@ Another explanation is that people were really not convinced that you would be a
 Finally, it could be explained if people voted firstly positive or negative, and then decided to change their vote later on. As the very famous Francis Picabia stated, "our heads is round so that it allows our thinking to change direction." How inspiring.. However, it is not mentioned whether or not voters are able to change an already casted vote. 
 Let's be honest, in all three cases, your feelings might have been spared, but one could say you missed your shot.
 
+**Neutral votes and duration of elections**
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
 
-<img src="images/neutralvotes3.png" width="400" height="300">
+<img src="images/neutralvotes3.png" width="500" height="300">
 
 We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
-
+However, the duration of the election does not seem to be correlated with the fraction of neutral votes that were casted. 
 
 ### CONCLUSION
 
-
-{% include average_over_time.html %}
-
-notes 
-- if people have more time to vote, might be most likely to be elected, so campaign for longer. 
