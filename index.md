@@ -138,7 +138,7 @@ Let's take a quick look at the election outcomes as one would predict them after
 
 {% include correctly_vs_wrongly.html %}
 
-That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just yet start your celebration. Concerning your bottle of Champagne however, keep it within reach, in case of victory you deserve Champagne, in case of defeat you need it [as would say Napoleon... or not?](https://vinepair.com/articles/fake-drinking-quotes/)
+That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just yet start your celebration. Concerning your bottle of Champagne however, keep it within reach, in case of victory you deserve Champagne, in case of defeat you need [it](https://vinepair.com/articles/fake-drinking-quotes/).
 
 **Can we observe the Information cascade phenomenon ?** 
 Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
