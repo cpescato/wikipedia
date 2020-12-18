@@ -145,27 +145,26 @@ That does look somewhat confusing to you maybe but no worries, we put the messag
 
 ## ANALYSIS OF NEUTRAL VOTES 
 Let's say your election is closed, votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and maybe take another chance later. 
-What do neutral votes say about your election ? What do neutral votes say about the electors's opinions ? 
+What do neutral votes say about your election? What do neutral votes say about the electors's opinions? 
 We dove into the elections where at least one neutral vote was casted per election. 
 
 **Neutral votes and the election outcome**
-We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
+We have investigated whether or not neutral votes can correlate with the outcome of the election. There is indeed a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
 <img src="images/neutralvotes2.png" width="400" height="800">
 
-We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
-One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
+We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we do not have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
+One could suppose that voters did not have a set opinion on you, the adminship seeker, and they thus decided to vote neutral. This could be explained by the fact that your campaign was not strong enough to really convince the people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
 Another explanation is that people were really not convinced that you would be a good Wikipedia administrator, but they actually knew you as a person, and as the elections are public, they did not want to hurt any feelings. Hence they chose to cast a neutral vote rather than a negative vote. 
-Finally, it could be explained if people voted firstly positive or negative, and then decided to change their vote later on. As the very famous Francis Picabia stated, "our heads is round so that it allows our thinking to change direction." How inspiring.. However, it is not mentioned whether or not voters are able to change an already casted vote. 
+Finally, it could be explained by the fact that people firstly voted positive or negative, and then decided to change their vote later on. As the very famous Francis Picabia stated, "Our heads are round to allow our thinking to change direction". How inspiring... 
 Let's be honest, in all three cases, your feelings might have been spared, but one could say you missed your shot.
 
 **Neutral votes and duration of elections**
-Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle the decision. This could mean that next time, you should campaign better and for longer in order to turn more's people opinion. 
+Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle for an election outcome. 
 
 <img src="images/neutralvotes3.png" width="500" height="300">
 
-We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones. We could infer that over a threshold of neutral votes, you will have very little chance of being elected, namely over 20% of neutral votes. Also, with a same ratio final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. 
-However, the duration of the election does not seem to be correlated with the fraction of neutral votes that were casted. 
+We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones, as said previously. We could infer that over a specific threshold percentage of neutral votes, namely over 20% of neutral votes, you will have very little chance of being elected. Also, with a same final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. However, the duration of the election per se does not seem to be correlated with the fraction of neutral votes that were casted. 
 
 ### CONCLUSION
 Time to sum up ! We hope you learned your lesson. 
