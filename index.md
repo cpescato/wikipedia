@@ -10,7 +10,7 @@ For some context : Wikipedia is the free online encyclopedia that we all know an
 
 Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding of when an election will be closed and of the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
 
-**So now tell us what you got Wikipedia!**
+**So... now tell us what you got Wikipedia!**
 
 ### TEMPORAL ANALYSIS 
 ## DATE
@@ -18,7 +18,7 @@ If you could choose the time of year your election will be held, would a certain
 Let's take a look. Its is important for further analysis to firstly observe at how the number of elections evolved over time, when grouped by year.
 
 *How did the number of elections vary over time ?*
-To play around with the time length, click on the tiny lines in the legend !!
+To play around with the time length, click on the tiny lines in the legend !
 
 {% include elec_timenbr_elecFalse.html %}*
 
@@ -166,4 +166,9 @@ We can see that most of the unsuccessful elections counted a higher fraction of 
 However, the duration of the election does not seem to be correlated with the fraction of neutral votes that were casted. 
 
 ### CONCLUSION
+Time to sum up ! Here are some take-home messages.
+First, we investigated the potential date depedency of Wikipedia elections. We saw that the election outcome is highly variable over time. However, there are no specific patterns of that are visible throughout the years. This basically means that you could not pinpoint a specific time of the year, neither a specific year, where you could be more likely to be elected. 
+Then, we looked into the durations of the election. When seeking adminship, keep in mind that shorter elections are rather unsuccessful, while longer elections tend to have a higher ratio of positive outcomes. 
+When it comes to time ... XXX
 
+Finally, we tried to understand what neutral votes could say about an election. There tend to have a higher proportion of neutral votes in failed elections than in successful elections, but the proportion of neutral votes does not seems to be correlated with the duration of the election. 
