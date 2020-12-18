@@ -8,7 +8,9 @@ We do not yet have the magic trick that will ensure you to be elected next time 
 To this end, we chose to look back on Wikipedia Adminship elections that happened between 2004 and 2008. 
 For some context : Wikipedia is the free online encyclopedia that we all know and love. Its articles are written by volunteers, amongst whom we can distinguish Administrators. In addition of being able to write articles, those people also have access to technical features of the website, especially the ability to help with its maintenance. But not anyone can become an admin that easily ! Adminship seekers have to go through a public election process which determines whether or not they are promoted. If you are more curious, a list of all admins can be found [here](https://en.wikipedia.org/wiki/Special:ListUsers?username=&group=sysop&wpsubmit=&wpFormIdentifier=mw-listusers-form&limit=50)
 
-**And now we ask : Tell us what you got Wikipedia !**
+Before getting started, we also wanted to introduce the [Wikipedia bureaucrats](https://en.wikipedia.org/wiki/Category:Wikipedia_bureaucrats). Indeed, these bureaucrats are amongst others the ones deciding of when an election will be closed and of the outcome of the latter. Do they accord the same duration to every election and do they declare success of election if at least half of the casted votes is positive? Be patient, you'll discover! 
+
+**So now tell us what you got Wikipedia!**
 
 ### TEMPORAL ANALYSIS 
 ## DATE
@@ -102,36 +104,41 @@ Below is a plot representing the average vote with respect to time for all elect
 
 As we can see, a few elections have lasted a very long time compared to the rest, as already discovered beforehand, making it hard to observe any clear pattern at first. However, we can see that the longest elections had a positive outcome, which is consistent with our previous analysis in the DURATION part. 
 - Only few elections were strongly positive or negative, and those that were lasted only a very short amount of time. This tells us that if an election takes a strong tendency from the very beginning, bureaucrats are more likely to consider it a foregone conclusion and close it. It might seem understandable, but that yields an open door for you if you have a larger social network ! Call your friends, your family, your colleagues, tell them to vote for you really quick, and you could have it in the bag. 
-Seems too good to be true right ? So it made us ask ourselves : Wikipedia, do you have any mechanisms in place to prevent such a thing ? 
+Seems too good to be true right ? This made us question ourselves if Wikipedia has any mechanisms in place to prevent such a thing from happening?
 
-- Also, elections with a very strongly positive vote do exist, but no failed elections has an averga vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
+- Also, elections with a very strongly positive vote do exist, but no failed elections has an average vote lower than -0.09. This is a good sign, meaning that overall people are more likely to vote in favour than against someone. 
 
 But don't get too confident just yet. In fact, we have computed that while 73.6% of the votes are positive, only 44.6% of elections are successful. Yes, you read that right. This could be explained by the fact that bureaucrats can close an election at any time, or by the fact that few successful elections regroup a large amount of the positive votes. This is possible since duration does not tell us the rythm at which the votes are casted.
-
-
-But let's investigate that. We kept track of both the number of votes per elections and their ending average vote value. so let's see :
-*is this next part to keep in the data story ?*
-XX ------------------------
-For successful elections..
-- The minimal average vote of an election was -0.00038, for a total of 47 votes casted for said election, while the maximal average vote was 0.77778 for a total of 27 votes casted for this election. 
-- The mean average vote of an election was 0.00437, while the median average vote was 0.00128. 
-
-For failed elections ...
-- The minimal average vote of an election was -0.09477 for a total of 29 votes casted fir said election, while the maximal average vote was 006358 for a total of 81 vote scasted for the corresponding election. 
-- The mean average vote of an election was -0.00005, while the median average vote was -0.00005. 
-
-We observe that for failed election, both mean and median appear to be  equal at this precision level, and that the median vote for failed elections is very close to 0. However, for successful elections, the election with the maximal mean vote only counted 27 votes casted. 
-XX-----------------------------
 
 Let's take a closer look at the elections which duration did not exceed the third quartile of the distribution of the durations. 
 
 {% include time3.html %}
 
-Weirdly, a few failed elections have an overall positive mean vote. However, we could not find any successful election with a overall negative mean vote. To justify that, we would have to go further in the analysis of the comments written live during the election process. 
+Weirdly, a few failed elections have an overall positive mean votes, they thus have a higher overall number of positive than negative votes. However, we could not find any succeeded elections that have an overall negative mean vote, thus a higher number of negative than positive votes with the naked eye. Additionally, many elections have a final average vote very close to zero, correspoding to 50% positive and 50% negative votes. 
+Aiming for 50% positive votes for your election will thus not be enough to ensure your success! 
 
-<img src="images/time3.png" width="400" height="300">
+### Can we observe social network theories?
+
+#### Hearding behaviour and information cascade
+When working with a given social network, it is always of great interest to check if any social network theories apply to the latter. Given that the votes casted for the Wikipedia adminship elections are available to future voters before they decide on the vote they will cast, we want to check for the presence, or absence of course, of [**herding behaviour**](https://en.wikipedia.org/wiki/Herd_behavior#Everyday_decision-making). However, we quickly realised that the exact effect that one will be able or not able to observe for such an election, is rather an [**information cascade**](https://en.wikipedia.org/wiki/Information_cascade). Such an information cascade in this context would mean that, as soon as a certain amount of positive or negative votes respectively have been casted, nearly all of the following casted votes will adhere to the election direction given by this first group of votes. Indeed, it is in the human nature to be tempted to do as the others do. One might expect to see this kind of behaviour for Wikipedia adminship elections as the latter are public, every voter can thus see the previously casted votes. 
+Applying our network theory of interest, namely the information cascade theory, to the last graph, especially for the elections with a strongly positive or negative outcome, one could think that this theory does indeed hold true. However, this is very likely due to the fact that these candidates are largely known because their work on Wikipedia sticks out for its excellence or its mediocrity respectively. 
+Considering now for example the failed election with the highest average vote, even though the first casted votes were positive, the following ones were negative. No information cascade here as it seems. For all the failed elections that have a slightly positive final average vote, we can see that the associated curves tend to oscillate over time, thus go up and down multiple times, which is at the opposite of an information cascade. 
+For the succeeded elections however, overall, once they casted a few positive votes they tend to keep on that path. Indeed, they do not change their direction much over the course of the election. In other words, as soon as they start increasing, the keep increasing until the election in question is closed. Let's however not forget that overall, we have significantly more positive than negative casted votes so seeing a positive tendency might also be due to the latter.
+
+Overall we would thus say that maybe, especially in the case of an overall positive final average vote, thus more positive than negative votes, the phenomenon of information cascade can be detected but overall, their is no strong effect and especially no effect for the failed elections. This means that even though voters can see the votes casted beforehand, they seem not to be strongly influenced by them and rather than blindly adapting the opinion of the previous voters they have their own opinion on the candidate, who would have guessed! 
+We assume that this might be due to the fact that, for these elections, no one is forced or strongly urged to vote (as it is often the case for political elections). In case someone does not know the candidate, they might be rather tempted not to cast their vote than to simply vote the same than the previous voters did. 
+
+Now, what does this mean for you? Well, it is very probably not enough to get all your friends and family to vote for you, the subsequent voters might not follow the trend set by your allies, what a bummer (for you of course, it is rather reassuring regarding democratic principles)! 
 
 
+#### Is your fate already sealed after half of the total election time?
+
+You might now of course be interested while tracking the votes casted for your election if you should already take out a bottle of Champagne to celebrate or not. 
+Let's take a quick look at the election outcomes as one would predict them after half of the total election duration and their true outcome. 
+
+{% include correctly_vs_wrongly.html %}
+
+That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just yet start your celebration. Concerning your bottle of Champagne however, keep it within reach, in case of victory you deserve Champagne, in case of defeat you need it [as would say Napoleon... or not?](https://vinepair.com/articles/fake-drinking-quotes/)
 
 **Can we observe the Information cascade phenomenon ?** 
 Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
