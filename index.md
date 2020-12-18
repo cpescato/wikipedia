@@ -55,12 +55,12 @@ Feel free to investigate the graphs by activating the traces for averaging over 
 
 {%include elec_timeavg_elecbubbles.html %}*
 
-We just could NOT resist making a few comments about these plots, so here they are : 
-*About the votes (first plot):*
+We just could NOT resist making a few comments about these plots, so here they are :   
+***About the votes (first plot):***
 - Until around July 2005, the number of votes is quite low (smaller bubbles) compared to the number of votes from July 2005 until January 2008 (bigger bubbles). Interesting! It suggests (again) that over time more and more votes were casted for Wikipedia elections. 
 - Focusing on the week range, we are sure you did not miss out on the *little red bubble* that does not follow the overall trend in January 2007, corresponding to the number of votes recorded the week ending with December the 31st 2006. At first, it os no surprise, as one could expect that during the holiday season people tend to be away from the computer, spending time with their relatives. Sadly, looking at the overall trend, we cannot decipher a decrease in the number of votes at the end of each year.
 
-*About the elections* (second plot):
+***About the elections* (second plot):***
 What about the *large green bubble* ? It accounts for the near-thousand elections was were closed in the month of May 2007 -- encompassing two of our election-closure pics!
 
 
@@ -140,11 +140,6 @@ Let's take a quick look at the election outcomes as one would predict them after
 
 That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just yet start your celebration. Concerning your bottle of Champagne however, keep it within reach, in case of victory you deserve Champagne, in case of defeat you need [it](https://vinepair.com/articles/fake-drinking-quotes/).
 
-**Can we observe the Information cascade phenomenon ?** 
-Well first, what is an information cascade ? In our case, it would mean that as soon as a certain amount of positive or negative votes have been casteed, nearly all of the following votes will adhere to the direction they give to the elction. This is the illustration of the the human nature being tempted to do as the ones before one did. If you want more details, we OF COURSE could only recommend the (Wikipedia)[https://en.wikipedia.org/wiki/Information_cascade] page.
-One might expect to see this kind of behaviour for Wikipedia public elections, and in any setting in which voters tell future voters the nature of the vote they casted.  
-
-
 
 ## ANALYSIS OF NEUTRAL VOTES 
 Let's say your election is closed, votes have been counted, and you did not get elected. But sticks and stones won't break your bones, and you decide to analyse the election process in order to learn from your mistakes and maybe take another chance later. 
@@ -154,7 +149,7 @@ We dove into the elections where at least one neutral vote was casted per electi
 **Neutral votes and the election outcome**
 We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-<img src="images/neutralvotes2.png" width="600" height="300">
+<img src="images/neutralvotes2.png" width="1000" height="300">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
