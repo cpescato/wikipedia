@@ -121,27 +121,26 @@ Aiming for 50% positive votes for your election will thus not be enough to ensur
 #### Can we observe social network theories? 
 #### Or
 #### Are people influenced by other people's votes and can tendencies be reversed
-
-#### Hearding behaviour and information cascade
-When working with a given social network, it is always of great interest to check if any social network theories apply to the latter. Given that the votes casted for the Wikipedia adminship elections are available to future voters before they decide on the vote they will cast, we want to check for the presence, or absence of course, of [**herding behaviour**](https://en.wikipedia.org/wiki/Herd_behavior#Everyday_decision-making). However, we quickly realised that the exact effect that one will be able or not able to observe for such an election, is rather an [**information cascade**](https://en.wikipedia.org/wiki/Information_cascade). Such an information cascade in this context would mean that, as soon as a certain amount of positive or negative votes respectively have been casted, nearly all of the following casted votes will adhere to the election direction given by this first group of votes. Indeed, it is in the human nature to be tempted to do as the others do. One might expect to see this kind of behaviour for Wikipedia adminship elections as the latter are public, every voter can thus see the previously casted votes. 
-Applying our network theory of interest, namely the information cascade theory, to the last graph, especially for the elections with a strongly positive or negative outcome, one could think that this theory does indeed hold true. However, this is very likely due to the fact that these candidates are largely known because their work on Wikipedia sticks out for its excellence or its mediocrity respectively. 
+Given that the votes casted for the Wikipedia adminship elections are available to future voters before they decide on the vote they will cast, we wanted to find out if people are being influenced by other previous votes, in network theory words, if we can see a so-called [**information cascade**](https://en.wikipedia.org/wiki/Information_cascade). 
+In this context, it would mean that, as soon as a certain amount of positive or negative votes respectively have been casted, nearly all of the following casted votes will adhere to the election direction given by this first group of votes. Indeed, it is in the human nature to be tempted to do as the others do. 
+Taking a look at the previous graph, especially for the elections with a strongly positive or negative final average vote, one could think that this theory does indeed hold true. However, this is very likely due to the fact that these candidates are largely known because their work on Wikipedia sticks out for its excellence or its mediocrity respectively. 
 Considering now for example the failed election with the highest average vote, even though the first casted votes were positive, the following ones were negative. No information cascade here as it seems. For all the failed elections that have a slightly positive final average vote, we can see that the associated curves tend to oscillate over time, thus go up and down multiple times, which is at the opposite of an information cascade. 
 For the succeeded elections however, overall, once they casted a few positive votes they tend to keep on that path. Indeed, they do not change their direction much over the course of the election. In other words, as soon as they start increasing, the keep increasing until the election in question is closed. Let's however not forget that overall, we have significantly more positive than negative casted votes so seeing a positive tendency might also be due to the latter.
 
 Overall we would thus say that maybe, especially in the case of an overall positive final average vote, thus more positive than negative votes, the phenomenon of information cascade can be detected but overall, their is no strong effect and especially no effect for the failed elections. This means that even though voters can see the votes casted beforehand, they seem not to be strongly influenced by them and rather than blindly adapting the opinion of the previous voters they have their own opinion on the candidate, who would have guessed! 
-We assume that this might be due to the fact that, for these elections, no one is forced or strongly urged to vote (as it is often the case for political elections). In case someone does not know the candidate, they might be rather tempted not to cast their vote than to simply vote the same than the previous voters did. 
+We assume that this might be due to the fact that, for these elections, no one is forced or strongly urged to vote (as it is often the case for other elections). In case someone does not know the candidate, they might be rather tempted not to cast their vote than to simply vote the same than the previous voters did. 
 
-Now, what does this mean for you? Well, it is very probably not enough to get all your friends and family to vote for you, the subsequent voters might not follow the trend set by your allies, what a bummer (for you of course, it is rather reassuring regarding democratic principles)! 
+Now, what does this mean for you? Well, it is very probably not enough to get all your friends and family to vote for you, the subsequent voters might not follow the trend set by your allies, what a bummer! For you of course, it is rather reassuring with regard to democratic principles...
 
 
-#### Is your fate already sealed after half of the total election time?
+#### Is your fate already sealed after half of the total election time? Can a tendency be reversed after half of the total election time?
 
-You might now of course be interested while tracking the votes casted for your election if you should already take out a bottle of Champagne to celebrate or not. 
+You might now of course be interested while tracking the votes casted for your election if you should already take out a bottle of champagne to celebrate or not. 
 Let's take a quick look at the election outcomes as one would predict them after half of the total election duration and their true outcome. 
 
 {% include correctly_vs_wrongly.html %}
 
-That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just yet start your celebration. Concerning your bottle of Champagne however, keep it within reach, in case of victory you deserve Champagne, in case of defeat you need [it](https://vinepair.com/articles/fake-drinking-quotes/).
+That does look somewhat confusing to you maybe but no worries, we put the message behind this graph into numbers for you. Long story short, there is a **20%** chance that the election outcome might still switch around until the end of the election. So don't just start your celebration yet, no one likes people that claim victory before they've actually won ([we have no one specific in mind of course](https://www.youtube.com/watch?v=W9d6j2uO6MI)). Concerning your bottle of champagne however, keep it within reach, [in case of victory you'll deserve it, in case of defeat you'll need it](https://vinepair.com/articles/fake-drinking-quotes/).
 
 
 ## ANALYSIS OF NEUTRAL VOTES 
@@ -169,12 +168,10 @@ We can see that most of the unsuccessful elections counted a higher fraction of 
 However, the duration of the election does not seem to be correlated with the fraction of neutral votes that were casted. 
 
 ### CONCLUSION
-Time to sum up ! Here are some take-home messages.
-First, we investigated the potential date depedency of Wikipedia elections. We saw that the election outcome is highly variable over time. However, there are no specific patterns of that are visible throughout the years. This basically means that you could not pinpoint a specific time of the year, neither a specific year, where you could be more likely to be elected. 
-Then, we looked into the durations of the election. When seeking adminship, keep in mind that shorter elections are rather unsuccessful, while longer elections tend to have a higher ratio of positive outcomes, so try and campaign hard and for long enough. 
+Time to sum up ! We hope you learned your lesson. 
+First, by investigating a potential date depedency of Wikipedia elections, we found that there's none. We saw that the election outcome is highly variable over time, no specific patterns are visible throughout the years. This basically means that you could not pinpoint a specific time of the year, neither a specific year, where you could be more likely to be elected. 
+We then looked into the election duration. When seeking adminship, keep in mind that shorter elections are rather unsuccessful, while longer elections tend to have a higher ratio of positive outcomes, so try and campaign hard and for long enough. 
+When it comes to time, keep in mind that 50% of positive votes are not enough to win an election. Additionally, don't be scared or count on an information cascade to save your election and don't forget, your faith is not sealed at mid-election! Don't get too excited nor to sad before you election is closed. 
+Finally, we looked at the influence of neutral votes in an election. There tends to be a higher proportion of neutral votes in failed elections than in successful ones, but the proportion of neutral votes does not seem to be correlated with the duration of the election. You should thus try to really convince people to make sure you win your election and not just try to not make them hate you.
 
-When it comes to time, 50% of positive vote sare not enough to win an election. 
-Your faith is not sealed at mid-election ! Don't get too excited nor to sad before you election is closed. 
-Don't count on information cascade. 
-
-Finally, we tried to understand what neutral votes could say about an election. There tend to have a higher proportion of neutral votes in failed elections than in successful elections, but the proportion of neutral votes does not seems to be correlated with the duration of the election. 
+All in all, play it safe, simply do a good job, be kind and respectful and keep editing those Wikipedia articles, we guarantee that this will get you elected! 
