@@ -20,7 +20,7 @@ Let's take a look. Its is important for further analysis to firstly observe how 
 *How did the number of elections vary over time ?*
 To play around with the time length, click on the tiny lines in the legend!
 
-{% include elec_timenbr_elecFalse.html %}*
+{% include elec_timenbr_elecFalse.html %}
 
 
 Very interestingly, we can notice an **exponential-like increase** in the number of elections between 2004 (70 elections), 2005 (150 elections), 2006 (360 elections), and 2007 (2100 elections).
@@ -28,7 +28,7 @@ The numbers of elections are approximated here for better understanding.
 Let's plot this with a log-scaled y-axis to investigate the exponential-like increase.
 From the graph below, we can see a straight line for the years 2004, 2005, and 2006. However, the massive increase in the number of elections in 2007 was so large that it grew even faster than an exponential function.
 
-{% include elec_timenbr_elecTrue.html %}*
+{% include elec_timenbr_elecTrue.html %}
 
 O.K., let's now go back to the first plot. Click on the tiny blue line to display the analysis by day. 
 The first thing that pops out are the peaks on May 3rd, 2007, during which more than 300 elections were closed, on May 26th with more than 200 elections being closed, and on December 4th with above 100 elections being closed. This raises some questions. What happened on these days ? Well, we found out that the famous Swiss illustrator Warja Lavator died on May 3rd, 2007. She was so talented, the bureaucrats could have closed the elections so that everyone could mourn in peace? Hmm... Seems unlikely. 
@@ -51,9 +51,9 @@ Now that you have a *perfect* understanding of the 'basic concepts' that we just
 **Have fun and play with the plot! It supports the interpretations we made previously!**
 Feel free to investigate the graphs by activating the traces for averaging over different time ranges and/or by zooming in! The number of elections or votes is visualized by the diameter of the bubbles.
 
-{%include vote_timeavg_votebubbles.html %}*
+{%include vote_timeavg_votebubbles.html %}
 
-{%include elec_timeavg_elecbubbles.html %}*
+{%include elec_timeavg_elecbubbles.html %}
 
 We just could NOT resist making a few comments about these plots, so here they are :   
 ***About the votes (first plot):***
@@ -151,7 +151,7 @@ We dove into the elections where at least one neutral vote was casted per electi
 **Neutral votes and the election outcome**
 We have investigated whether or not neutral votes can correlate with the outcome of the election. There is indeed a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-<img src="images/neutralvotes2.png" width="400" height="800">
+<img src="images/neutralvotes2.png" width="400" height="600">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we do not have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and they thus decided to vote neutral. This could be explained by the fact that your campaign was not strong enough to really convince the people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
@@ -162,7 +162,7 @@ Let's be honest, in all three cases, your feelings might have been spared, but o
 **Neutral votes and duration of elections**
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle for an election outcome. 
 
-<img src="images/neutralvotes3.png" width="600" height="200">
+<img src="images/neutralvotes3.png" width="600" height="300">
 
 We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones, as said previously. We could infer that over a specific threshold percentage of neutral votes, namely over 20% of neutral votes, you will have very little chance of being elected. Also, with a same final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. However, the duration of the election per se does not seem to be correlated with the fraction of neutral votes that were casted. 
 
