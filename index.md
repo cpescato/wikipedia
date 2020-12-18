@@ -90,7 +90,7 @@ We also want to group the elections by durations (in hours, up to second precisi
 
 <img src="images/duration4.png" width="550" height="300">
 
-What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100 hours, very few of them had a positive outcome.
+What does this plot tells us ? Well, firstly it seems coherent with the previous one, meaning that longer elections appear to display a higher ratio of positive outcomes than elections lasting a shorter amount of time. Among the elections lasting less than 100 hours, very few of them had a positive outcome. On another note, it is also important to notice that having a long election does not guarantee a victory. Quite a few long elections had negative results.
 
 **Conclusion: Give people time to know you, to hear your opinions, and discuss about your program, increasing your election duration might increase your chances of winning!**
 
@@ -118,9 +118,9 @@ Let's take a closer look at the elections whose duration did not exceed the thir
 Weirdly, a few failed elections have an overall positive average vote, they thus have a higher overall number of positive than negative votes. However, we could not find any succeeded elections that have an overall negative mean vote with the naked eye, thus a higher number of negative than positive votes. Additionally, many elections have a final average vote very close to zero, correspoding to 50% positive and 50% negative votes. 
 Aiming for 50% positive votes for your election will thus not be enough to ensure your success! 
 
-#### Can we observe social network theories? 
+#### **Can we observe social network theories? 
 #### Or
-#### Are people influenced by other people's votes and can tendencies be reversed
+#### Are people influenced by other people's votes and can tendencies be reversed ?**
 Given that the votes casted for the Wikipedia adminship elections are available to future voters before they decide on the vote they will cast, we wanted to find out if people are being influenced by other previous votes, in network theory words, if we can see a so-called [**information cascade**](https://en.wikipedia.org/wiki/Information_cascade). 
 In this context, it would mean that, as soon as a certain amount of positive or negative votes respectively have been casted, nearly all of the following casted votes will adhere to the election direction given by this first group of votes. Indeed, it is in the human nature to be tempted to do as the others do. 
 Taking a look at the previous graph, especially for the elections with a strongly positive or negative final average vote, one could think that this theory does indeed hold true. However, this is very likely due to the fact that these candidates are largely known because their work on Wikipedia sticks out for its excellence or its mediocrity respectively. 
