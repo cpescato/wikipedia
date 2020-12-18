@@ -81,12 +81,12 @@ More than 75% of the elections lasted less than 180 hours, meaning less than 2 w
 <img src="images/duration3.png" width="600" height="300">
 
 
-We can clearly see 2 clusters. ELections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
+We can clearly see 2 clusters. Elections that lasted close to 250 hours are more likely to have a positive outcome. On top of that, elections that only lasted a very brief amount of time, meaning less than 50 hours, are way more likely to end with a negative outcome. 
 This repartition seems coherent with the fact that shorter elections are rather unsuccessful. This can also be explained by the fact that Wikipedia bureaucrats tend to close elections that accumulate almost only negative votes from the beginning early, resulting in short, failed elections. 
 Let's however note that the first mentionned cluster is actually composed of both successful as well as failed elections. Managing to extend your election duration will thus not necessarily lead you to success.
 
 Keep in mind, the fraction of positive votes over the total number of votes is not always indicative of the election outcome. Bureaucrats have the power to make an election unsuccessful even if the fraction of positive votes exceeded 50%. You might be thinking : *Wikipedia ? What about democracy ? The voice of the people ?*  
-Just to evaluate the frequency of this phenomenon, we are going to visualize it by grouping the elections by durations (in hours, up to second precision) and plot the fraction of elections with a positive outcome for each duration.
+We also want to group the elections by durations (in hours, up to second precision) and plot the fraction of elections with a positive outcome for each duration.
 
 <img src="images/duration4.png" width="550" height="300">
 
@@ -162,7 +162,7 @@ Let's be honest, in all three cases, your feelings might have been spared, but o
 **Neutral votes and duration of elections**
 Another correlation that can be investigated is the one between the proportion of neutral votes and the duration of the elections. If a larger fraction of neutral votes are casted, one could suppose that more people are perplex about you candidacy, and that overall it would take more time to settle for an election outcome. 
 
-<img src="images/neutralvotes3.png" width="500" height="300">
+<img src="images/neutralvotes3.png" width="600" height="200">
 
 We can see that most of the unsuccessful elections counted a higher fraction of neutral votes compared to the successful ones, as said previously. We could infer that over a specific threshold percentage of neutral votes, namely over 20% of neutral votes, you will have very little chance of being elected. Also, with a same final ratio of neutral votes, an election is more likely to be successful if it lasted for a longer period of time. However, the duration of the election per se does not seem to be correlated with the fraction of neutral votes that were casted. 
 
