@@ -149,7 +149,7 @@ We dove into the elections where at least one neutral vote was casted per electi
 **Neutral votes and the election outcome**
 We have investigated whether or not neutral votes can correlate with the outcome of the election. There is a potential relationship between the fraction of neutral votes over the total number of votes, and the outcome of the election. 
 
-<img src="images/neutralvotes2.png" width="400" height="1000">
+<img src="images/neutralvotes2.png" width="400" height="800">
 
 We can see that a high fraction of neutral votes is correlated with a negative outcome of the election. This could be interpreted in several ways, since we have not much additional information on how these votes are taken into account by Wikipedia bureaucrats. 
 One could suppose that voters did not have a set opinion on you, the adminship seeker, and thus they voted neutral. This could be explained by the fact that your campaign was not strong enough to turn the opinions of people that did not know you before. They were not convinced, but not disappointed either, hence they voted neutral. This seems rather unlikely to us as no one is forced to cast their vote for every election so why would they make the effort to cast a neutral vote? But who knows...
@@ -168,7 +168,10 @@ However, the duration of the election does not seem to be correlated with the fr
 ### CONCLUSION
 Time to sum up ! Here are some take-home messages.
 First, we investigated the potential date depedency of Wikipedia elections. We saw that the election outcome is highly variable over time. However, there are no specific patterns of that are visible throughout the years. This basically means that you could not pinpoint a specific time of the year, neither a specific year, where you could be more likely to be elected. 
-Then, we looked into the durations of the election. When seeking adminship, keep in mind that shorter elections are rather unsuccessful, while longer elections tend to have a higher ratio of positive outcomes. 
-When it comes to time ... XXX
+Then, we looked into the durations of the election. When seeking adminship, keep in mind that shorter elections are rather unsuccessful, while longer elections tend to have a higher ratio of positive outcomes, so try and campaign hard and for long enough. 
+
+When it comes to time, 50% of positive vote sare not enough to win an election. 
+Your faith is not sealed at mid-election ! Don't get too excited nor to sad before you election is closed. 
+Don't count on information cascade. 
 
 Finally, we tried to understand what neutral votes could say about an election. There tend to have a higher proportion of neutral votes in failed elections than in successful elections, but the proportion of neutral votes does not seems to be correlated with the duration of the election. 
